@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const platoRoutes = require('./routes/platoRoutes');
 const reservaRoutes = require('./routes/reservaRoutes');
 const pedidoRoutes = require('./routes/pedidoRoutes');
+const dashboardRoutes = require('./routes/dashboardRoutes');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use('/api', authRoutes);
 app.use('/api', platoRoutes);
 app.use('/api', reservaRoutes);
 app.use('/api', pedidoRoutes);
+app.use('/api', dashboardRoutes);
 
 app.get('/', (req, res) => {
     res.send('Servidor funcionando');
