@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const authRoutes = require('./routes/authRoutes');
 const platoRoutes = require('./routes/platoRoutes');
+const reservaRoutes = require('./routes/reservaRoutes');
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use('/api', authRoutes);
 app.use('/api', platoRoutes);
+app.use('/api', reservaRoutes);
 
 app.get('/', (req, res) => {
     res.send('Servidor funcionando');
