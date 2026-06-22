@@ -80,3 +80,14 @@ nav a:hover{
     background-color: #9d0208;
     transform: scale(1.05);
 }
+.titulo-principal{
+    background: linear-gradient(90deg,#d62828,#e85d04);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
