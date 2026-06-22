@@ -8,6 +8,7 @@ const reservaRoutes = require('./routes/reservaRoutes');
 const pedidoRoutes = require('./routes/pedidoRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 const ubicacionRoutes = require('./routes/ubicacionRoutes');
+const pagoRoutes = require('./routes/pagoRoutes');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use('/api', reservaRoutes);
 app.use('/api', pedidoRoutes);
 app.use('/api', dashboardRoutes);
 app.use('/api', ubicacionRoutes);
+app.use('/api', pagoRoutes);
 
 app.get('/', (req, res) => {
     res.send('Servidor funcionando');
